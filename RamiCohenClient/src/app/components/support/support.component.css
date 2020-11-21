@@ -1,0 +1,32 @@
+
+.list{  
+    max-width: 700px;
+    background-color: #0077ff;  
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) calc(1.25rem - 1px) calc(1.25rem - 1px);
+}
+#haedOfPage{
+    background-color: #2fffc5;   
+}
+
+input{
+    margin: 5px;
+    max-width: 80%;
+}
+#divForm{
+    display: inline-block;
+}
+#btn{
+    background-color: green;
+}
+
+#btn2{
+    background-color: red;
+}
+footer{
+    margin-top: 5px  !important;
+    padding-left: 60px;
+}
+
+h5{
+    color: #b52be2;
+}

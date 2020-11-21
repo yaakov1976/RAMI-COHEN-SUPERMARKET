@@ -1,0 +1,68 @@
+
+th,td{
+    border: 2px solid blue;
+}
+
+#btnSend{
+    display: block;
+    margin-left: 300px;
+    background-color: darkgreen;
+    color: white;
+}
+#divCategory{
+    background-color: rgb(199, 199, 199);
+    width: 210px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+img{
+    width: 100px;
+    height:75px;
+    margin-left: 11px;
+    margin-bottom: 10px;
+}
+#btnCategory{
+    background-color: yellowgreen;
+    margin: 30px;
+}
+h2{
+    color: red;
+    margin: 20px;
+}
+.pricing-header {
+    max-width: 700px;
+    background-color: blueviolet;
+}
+.text-center {
+    text-align: center!important;
+}
+@media (min-width: 768px){
+
+}
+.pt-md-5, .py-md-5 {
+    padding-top: 3rem!important;
+}
+@media (min-width: 768px){}
+.pb-md-4, .py-md-4 {
+    padding-bottom: 1.5rem!important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) calc(1.25rem - 1px) calc(1.25rem - 1px);
+}
+.mr-auto, .mx-auto {
+    margin-right: auto!important;
+}
+#haedOfPage{
+    background-color: #2fffc5;
+}
+#categoryName{
+    color: red;
+}
+#postProducts{
+    display: inline-block;
+}
+h5{
+    color: #b52be2;
+}

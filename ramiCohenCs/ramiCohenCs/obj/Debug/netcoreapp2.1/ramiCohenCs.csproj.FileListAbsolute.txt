@@ -1,0 +1,28 @@
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.deps.json
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.runtimeconfig.json
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.runtimeconfig.dev.json
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.dll
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.csprojAssemblyReference.cache
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.csproj.CoreCompileInputs.cache
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.RazorAssemblyInfo.cache
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.RazorAssemblyInfo.cs
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.AssemblyInfoInputs.cache
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.AssemblyInfo.cs
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.RazorTargetAssemblyInfo.cache
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.pdb
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.dll
+C:\Users\yaako\source\repos\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.pdb
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.deps.json
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.runtimeconfig.json
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.runtimeconfig.dev.json
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.dll
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\bin\Debug\netcoreapp2.1\ramiCohenCs.pdb
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.csprojAssemblyReference.cache
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.csproj.CoreCompileInputs.cache
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.RazorAssemblyInfo.cache
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.RazorAssemblyInfo.cs
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.AssemblyInfoInputs.cache
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.AssemblyInfo.cs
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.RazorTargetAssemblyInfo.cache
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.dll
+C:\Users\yaako\OneDrive\שולחן העבודה\int\RamiCohenAngular\ramiCohenCs\ramiCohenCs\obj\Debug\netcoreapp2.1\ramiCohenCs.pdb

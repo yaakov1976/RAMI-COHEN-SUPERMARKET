@@ -1,0 +1,34 @@
+<p (click)="back()">back to INVOICE ITEM</p>
+<form [formGroup]= "addForm" (ngSubmit)= "onSubmit()">
+    <h1> TO EDIT INVOICE ITEM</h1>
+    <div class="form-group">
+        <label for="id">ID :</label>
+        <input type="text" class="form-control" formControlName="id" id="id" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['id'].hasError['required'] && addForm.controls['id'].touched">
+            ID is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="invoice_id">invoice_id :</label>
+        <input type="text" class="form-control" formControlName="invoice_id" id="name" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['invoice_id'].hasError['required'] && addForm.controls['invoice_id'].touched">
+            invoice_id is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="product_id">product_id :</label>
+        <input type="text" class="form-control" formControlName="product_id" id="email" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['product_id'].hasError['required'] && addForm.controls['product_id'].touched">
+            product_id is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="quantity">quantity :</label>
+        <input type="text" class="form-control" formControlName="quantity" id="quantity" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['quantity'].hasError['required'] && addForm.controls['quantity'].touched">
+            quantity is reqruired
+        </div>
+    </div>
+    <button class="btn btn-success" [disabled]="addForm.invalid">EDIT INVOICE ITEM</button>
+    <div *ngIf="invalidLogin" class="error">Invalid post</div>
+</form>

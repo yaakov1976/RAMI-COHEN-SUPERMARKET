@@ -1,0 +1,27 @@
+<a [routerLink]="['/HOME']">HOME</a>
+<h1>INVOICE ITEM</h1>
+
+
+<a [routerLink]="['/HOME/postsInvoiceItem']">Posts</a> |
+<a [routerLink]="['addInvoiceItem']">add</a> |
+<a [routerLink]="['deleteInvoiceItem']">delete</a>|
+<a [routerLink]="['editInvoiceItem']">edit</a> 
+
+<table mdbTable>
+    <thead>
+      <tr>
+        <th >position </th>
+        <th >invoice_id</th>
+        <th >product_name </th>
+        <th >quantity </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let el of posts">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.invoice_id}}</td>
+        <td>{{el.product_name}}</td>
+        <td>{{el.quantity}}</td>
+      </tr>
+    </tbody>
+  </table>

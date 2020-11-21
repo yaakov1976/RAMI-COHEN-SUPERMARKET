@@ -1,0 +1,12 @@
+.form-control{
+    width: 50%;
+}
+form{
+    margin-left: 400px;
+}
+button{
+    background-color: red;
+}
+p{
+    color: blue;
+}

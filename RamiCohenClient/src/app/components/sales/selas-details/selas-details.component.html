@@ -1,0 +1,66 @@
+<div id="haedOfPage" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3
+ bg-#9d00ff border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Rami Cohen Supermarket</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" [routerLink]="['/HOME']">HOME</a>
+    <a class="p-2 text-dark" [routerLink]="['../Adminster']">Adminster</a>
+    <a class="p-2 text-dark" [routerLink]="['../Support']">Support</a>
+    <a class="p-2 text-dark" [routerLink]="['../SELAS']">Shopping</a>
+  </nav>
+  <a class="btn btn-outline-primary" [routerLink]="['/JoinClubMember']">join club members</a>
+</div>
+<form [formGroup]= "addForm" (ngSubmit)= "onSubmit()">
+    <h1> fill in the details for delivery</h1>
+    <div class="form-group">
+        <label for="fullName">fullName :</label>
+        <input type="text" class="form-control" formControlName="fullName" id="fullName" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['fullName'].hasError['required'] && addForm.controls['fullName'].touched">
+            fullName is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="phonNumber">phonNumber :</label>
+        <input type="text" class="form-control" formControlName="phonNumber" id="phonNumber" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['phonNumber'].hasError['required'] && addForm.controls['phonNumber'].touched">
+            phonNumber is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">email :</label>
+        <input type="text" class="form-control" formControlName="email" id="email" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['email'].hasError['required'] && addForm.controls['email'].touched">
+            email is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="address">address :</label>
+        <input type="text" class="form-control" formControlName="address" id="address" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['address'].hasError['required'] && addForm.controls['address'].touched">
+            address is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="delivery">delivery :</label>
+        <input type="text" class="form-control" formControlName="delivery" id="delivery" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['delivery'].hasError['required'] && addForm.controls['delivery'].touched">
+            delivery is reqruired
+        </div>
+    </div>
+ 
+    <div class="form-group">
+        <label for="orderStatus">orderStatus :</label>
+        <input type="text" class="form-control" formControlName="orderStatus" id="orderStatus" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['orderStatus'].hasError['required'] && addForm.controls['orderStatus'].touched">
+            orderStatus is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="remarks">remarks :</label>
+        <input type="text" class="form-control" formControlName="remarks" id="remarks" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['remarks'].hasError['required'] && addForm.controls['remarks'].touched">
+            remarks is reqruired
+        </div>
+    </div>
+    <button class="btn btn-success" [disabled]="addForm.invalid">ADD POST</button>
+    <div *ngIf="invalidLogin" class="error">Invalid post</div>
+</form>

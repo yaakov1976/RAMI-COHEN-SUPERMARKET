@@ -1,0 +1,19 @@
+#haedOfPage{
+    background-color: #2fffc5;
+}
+
+.list{  
+    max-width: 700px;
+    background-color: #2fff6f;  
+    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) calc(1.25rem - 1px) calc(1.25rem - 1px);
+}
+h5{
+    color: #b52be2;
+}
+h2{
+    color: #fff700;
+}
+footer{
+    margin-top: 60px  !important;
+    padding-left: 60px;
+}

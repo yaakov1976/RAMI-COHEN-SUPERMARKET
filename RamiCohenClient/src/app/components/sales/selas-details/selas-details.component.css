@@ -1,0 +1,10 @@
+.form-control{
+    width: 50%;
+}
+form{
+    margin-left: 400px;
+}
+#haedOfPage{
+    background-color: #2fffc5;   
+    max-width: 100%;
+}

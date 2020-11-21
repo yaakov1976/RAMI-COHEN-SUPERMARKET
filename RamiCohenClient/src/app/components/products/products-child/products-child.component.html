@@ -1,0 +1,10 @@
+
+<div >
+    <h3> {{TheProduct.productName}} </h3>
+      <img src="{{TheProduct.imageAddress}}" >
+      <p> Price : {{TheProduct.price}} </p>
+      <label>weight / amount :
+        <input type="text" id="weightInput" #Weight>
+        <button (click)="sendProduct(Weight.value)">send</button>
+      </label>
+    </div>

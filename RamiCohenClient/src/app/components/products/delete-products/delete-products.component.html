@@ -1,0 +1,14 @@
+<p (click)="back()">back to PRODUCTS</p>
+<form [formGroup]= "addForm" (ngSubmit)= "onSubmit()">
+    <h1>DELETE A PRODUCT</h1>
+    <div class="form-group">
+        <label for="id"> id:</label>
+        <input type="text" class="form-control" formControlName="id" id="id" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['id'].hasError['required'] && addForm.controls['id'].touched">
+            userId is reqruired
+        </div>
+    </div>
+<button type="button" class="btn btn-danger"(click)="onSubmit()" [disabled]="addForm.invalid">
+    DELETE PRODUCT</button>
+</form>
+

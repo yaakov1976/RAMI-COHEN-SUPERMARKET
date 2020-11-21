@@ -1,0 +1,59 @@
+<div id="haedOfPage" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3
+ bg-#9d00ff border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Rami Cohen Supermarket</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" [routerLink]="['/HOME']">HOME</a>
+    <a class="p-2 text-dark" [routerLink]="['../Adminster']">Adminster</a>
+    <a class="p-2 text-dark" [routerLink]="['../Support']">Support</a>
+    <a class="p-2 text-dark" [routerLink]="['../SELAS']">Shopping</a>
+  </nav>
+  <a class="btn btn-outline-primary" [routerLink]="['/JoinClubMember']">join club members</a>
+</div>
+<div class="list px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <form [formGroup]="addForm" (ngSubmit)= "onSubmit()">
+        <p>join club member in order to get a 5% discount in etch shopping</p>
+        <h5> TO ADD A CLUB MEMBER : </h5>
+        <div class="form-group">
+            <label for="name">name :</label>
+            <input type="text" class="form-control" formControlName="name" id="name" autocomplete="off">
+            <div class="error" *ngIf="addForm.controls['name'].hasError['required'] && addForm.controls['name'].touched">
+                name is reqruired
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">email :</label>
+            <input type="text" class="form-control" formControlName="email" id="email" autocomplete="off">
+            <div class="error" *ngIf="addForm.controls['email'].hasError['required'] && addForm.controls['email'].touched">
+                email is reqruired
+            </div>
+        </div>
+        <button class="btn btn-success" [disabled]="addForm.invalid">ADD CLUB MEMBER</button>
+        <div *ngIf="invalidLogin" class="error">Invalid post</div>
+    </form>
+</div>
+<footer class="pt-4 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="../../../assets/pictur/yaakov.jpg" alt="" width="40" height="40">
+        <small class="d-block mb-3 text-muted">© yaakov1976@gmail.com</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a  [routerLink]="['../Features']">More apps on the way</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a [routerLink]="['../Resources']">Are strenght is are resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a [routerLink]="['../About']">developed by yaakov cohen</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>

@@ -1,0 +1,68 @@
+<div id="haedOfPage" class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3
+ bg-#9d00ff border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">Rami Cohen Supermarket</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" [routerLink]="['/HOME']">HOME</a>
+    <a class="p-2 text-dark" [routerLink]="['../Adminster']">Adminster</a>
+    <a class="p-2 text-dark" [routerLink]="['../Support']">Support</a>
+    <a class="p-2 text-dark" [routerLink]="['../SELAS']">Shopping</a>
+  </nav>
+  <a class="btn btn-outline-primary" [routerLink]="['/JoinClubMember']">join club members</a>
+</div>
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Shopping</h1>
+  <p class="lead">You can select a product to add to the shopping list from the bottom or select 
+    by category
+  </p>
+</div>
+<h3>SELAES LIST:</h3>
+<table mdbTable >
+  <thead>
+    <tr>
+      <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr mdbTableCol *ngFor="let el of selectedProducts">
+      <th scope="row">{{el.id}}</th>
+      <td>{{el.productName}}</td>
+      <td>{{el.price}}</td>
+      <td>{{el.weight}}</td>
+      <td>{{el.totalPrice.toFixed(2)}}</td>
+      <td (click)="deleteThisProduct(el.id)" >  x  </td>
+    </tr>
+    <tr>
+      <td> <b>THE TOTAL PRICE IS:</b> </td>
+      <td><b>{{calculatTotal.toFixed(2)}}</b> </td></tr>
+  </tbody>
+</table>
+<button id="btnSend" (click)="sendToDetails()"> send to details</button>
+ 
+<h2>SELECT A CATEGORY :</h2>
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm" *ngFor="let cat of Categories">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal" id="categoryName">{{cat.name}}</h4>
+      </div>
+      <div class="card-body">
+        <img src={{cat.img}}>
+        <button type="button" class="btn btn-lg btn-block btn-primary"
+        (click)="selectedCategory(cat.name)">select {{cat.name}}</button>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div  *ngIf="!postByCategory">
+  <div id="postProducts" *ngFor="let p of posts">
+    <app-selas-child [TheProduct]="p" (buyNewProduct)="displayProduct($event)"></app-selas-child>
+  </div>
+</div>
+
+<div *ngIf="postByCategory">
+  <div id="postProducts" *ngFor="let p of postsByCategory">
+    <app-selas-child [TheProduct]="p" (buyNewProduct)="displayProduct($event)"></app-selas-child>
+  </div>
+</div>
+

@@ -1,0 +1,18 @@
+.jumbotron{
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: grey;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#haedOfPage{
+    background-color: #2fffc5;   
+}
+h5{
+    color: #b52be2;
+}
+footer{
+    margin-top: 60px  !important;
+    padding-left: 60px;
+}

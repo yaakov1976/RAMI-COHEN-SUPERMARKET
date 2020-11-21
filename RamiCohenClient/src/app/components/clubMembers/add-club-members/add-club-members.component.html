@@ -1,0 +1,20 @@
+<p (click)="back()">back to CLUB MEMBERS</p>
+<form [formGroup]= "addForm" (ngSubmit)= "onSubmit()">
+    <h1> TO ADD A CLUB MEMBER : </h1>
+    <div class="form-group">
+        <label for="name">name :</label>
+        <input type="text" class="form-control" formControlName="name" id="name" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['name'].hasError['required'] && addForm.controls['name'].touched">
+            name is reqruired
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">email :</label>
+        <input type="text" class="form-control" formControlName="email" id="email" autocomplete="off">
+        <div class="error" *ngIf="addForm.controls['email'].hasError['required'] && addForm.controls['email'].touched">
+            email is reqruired
+        </div>
+    </div>
+    <button class="btn btn-success" [disabled]="addForm.invalid">ADD CLUB MEMBER</button>
+    <div *ngIf="invalidLogin" class="error">Invalid post</div>
+</form>

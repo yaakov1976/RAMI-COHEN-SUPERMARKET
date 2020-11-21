@@ -1,0 +1,30 @@
+<a [routerLink]="['/HOME']">HOME</a>
+<h1>ORDERS</h1>
+<a [routerLink]="['/HOME/ORDERS']">PostsORDERS</a> |
+<a [routerLink]="['addOrders']">add</a> |
+<a [routerLink]="['DeleteOrders']">Delete</a> |
+<a [routerLink]="['editOrders']">edit</a> |
+
+<table mdbTable border= "true">
+    <thead>
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let el of posts">
+        <th scope="row">{{el.id}}</th>
+        <td>{{el.fullName}}</td>
+        <td>{{el.phonNumber}}</td>
+        <td>{{el.email}}</td>
+        <td>{{el.address}}</td>
+        <td>{{el.delivery}}</td>
+        <td>{{el.order_numberOfUnits}}</td>
+        <td>{{el.totalPrice}}</td>
+        <td>{{el.personalGreeting}}</td>
+        <td>{{el.orderStatus}}</td>
+        <td>{{el.remarks}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="showData()">show data</button>
